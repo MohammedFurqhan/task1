@@ -4,12 +4,14 @@ body{
 
 /* Navigation Part */
 .nav{
-    background-color: yellow;
+    background-color: #9CA3AF;
     padding-bottom: 1rem;
     position: fixed;
     width: 100%;
     top: 0%;
     margin-bottom: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 #logo{
     margin-bottom: 1rem;
@@ -28,7 +30,7 @@ li{
     padding-right: 2rem;
     text-decoration: none;
 }
-nav.active{
+.active{
     background-color: red;
     padding-bottom: 1rem;
     position: fixed;
@@ -61,8 +63,36 @@ footer{
 .container-bottom{
     margin-bottom: 7rem;
 }
+.section-center{
+    ma
+}
 .off-white{
     margin-top: 2rem;
     background-color: #F3F4F6;
     
+}
+
+/* Contact US Page */
+
+label{
+    display: block;
+    margin-bottom: 2rem;
+}
+input{
+    padding: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    border : 0.5px solid black;
+    float: right;
+    margin-right: 7rem;
+    
+}
+.input{
+    padding: 12px 0px;
+}
+
+.dropdown{
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    float: right;
+    margin-right: 7rem;
 }

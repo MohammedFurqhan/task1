@@ -5,7 +5,7 @@ window.onscroll = function()
 {
     var top  = window.scrollY;
     console.log(top);
-    if(top >=36)
+    if(top >= 36)
     {
         nav.classList.add('active');
     }
