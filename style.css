@@ -4,7 +4,7 @@ body{
 
 /* Navigation Part */
 .nav{
-    background-color: #9CA3AF;
+    background-color: #8c7373;
     padding-bottom: 1rem;
     position: fixed;
     width: 100%;
@@ -12,6 +12,7 @@ body{
     margin-bottom: 2rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+    
 }
 #logo{
     margin-bottom: 1rem;
@@ -27,8 +28,13 @@ li{
     display: inline;
 }
 .nav-link{
-    padding-right: 2rem;
+    padding: 1rem;
     text-decoration: none;
+    color: black;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+.nav-link:hover{
+    color: white;
 }
 .active{
     background-color: red;
@@ -54,22 +60,57 @@ footer{
 .container-section{
     margin-top: 7rem;
 }
+h2 , label{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    te
+    display: inline;
+
+}
+h2#header-map{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    text-align: left; 
+    font-weight: bolder;
+    color: #111827;
+    
+    
+}
+
+.para{
+    font-family: 'Alegreya Sans', sans-serif;   
+    line-height: 1.2rem;
+    font-style: italic;
+    letter-spacing: 0.01rem;
+}
 .container{
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
     border-radius: 2rem;
     padding: 2rem;
+    
 }
 .container-bottom{
-    margin-bottom: 7rem;
+    
 }
 .section-center{
-    ma
+    
 }
 .off-white{
     margin-top: 2rem;
     background-color: #F3F4F6;
-    
+}
+.horizontal
+{
+    margin: 2rem 35rem;
+    border-style: solid;
+    color: red;
+}
+
+.map{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+iframe{
+    border-radius: 2rem;
 }
 
 /* Contact US Page */
@@ -77,22 +118,24 @@ footer{
 label{
     display: block;
     margin-bottom: 2rem;
+    margin-left: 2vw;
 }
 input{
-    padding: 0.5rem 0rem;
+    padding: 0.5vw 2rem;
     border-radius: 0.5rem;
     border : 0.5px solid black;
     float: right;
     margin-right: 7rem;
     
 }
-.input{
+.input-field{
     padding: 12px 0px;
 }
 
 .dropdown{
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 5rem;
     border-radius: 0.5rem;
     float: right;
     margin-right: 7rem;
+    text-align: left;
 }
