@@ -3,16 +3,20 @@ body{
 }
 
 /* Navigation Part */
-nav{
+.nav{
     background-color: yellow;
     padding-bottom: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    margin-bottom: 2rem;
 }
 #logo{
     margin-bottom: 1rem;
     padding: 2rem;
 
 }
-ul{
+.nav-list{
     margin-top: -4rem;
     text-align: center;
 }
@@ -23,4 +27,42 @@ li{
 .nav-link{
     padding-right: 2rem;
     text-decoration: none;
+}
+nav.active{
+    background-color: red;
+    padding-bottom: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    margin-bottom: 2rem;
+}
+/* Footer */
+footer{
+    position: fixed;
+    background-color:#9CA3AF;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+/* About us */
+.container-section{
+    margin-top: 7rem;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.container-bottom{
+    margin-bottom: 7rem;
+}
+.off-white{
+    margin-top: 2rem;
+    background-color: #F3F4F6;
+    
 }
