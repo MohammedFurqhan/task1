@@ -1,0 +1,26 @@
+body{
+    margin: 0%;
+}
+
+/* Navigation Part */
+nav{
+    background-color: yellow;
+    padding-bottom: 1rem;
+}
+#logo{
+    margin-bottom: 1rem;
+    padding: 2rem;
+
+}
+ul{
+    margin-top: -4rem;
+    text-align: center;
+}
+li{
+    
+    display: inline;
+}
+.nav-link{
+    padding-right: 2rem;
+    text-decoration: none;
+}
