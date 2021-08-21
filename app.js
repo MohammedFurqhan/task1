@@ -1,6 +1,6 @@
-console.log("hello")
+console.log("Hello")
 var nav = document.querySelector(".nav")
-
+var navmid = document.querySelector(".nav")
 window.onscroll = function()
 {
     var top  = window.scrollY;
@@ -14,13 +14,3 @@ window.onscroll = function()
         nav.classList.remove('active');
     }
 }
-// $(function() {
-//     $(window).on("scroll", function() {
-//         if($(window).scrollTop() > 50) {
-//             $("nav").addClass("change");
-//         } else {
-//             //remove the background property so it comes transparent again (defined in your css)
-//            $("nav").removeClass("change");
-//         }
-//     });
-// });

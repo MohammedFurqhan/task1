@@ -4,7 +4,27 @@ body{
 
 /* Navigation Part */
 .nav{
-    background-color: #8c7373;
+    background-color: ;
+    padding-bottom: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    margin-bottom: 2rem;
+    border-bottom-left-radius: 2rem;
+    font-weight: bolder;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.active{
+    background-color: #fff;
+    padding-bottom: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #9CA3AF;
+}
+/* .activesecondary{
+    background-color: white;
     padding-bottom: 1rem;
     position: fixed;
     width: 100%;
@@ -12,10 +32,10 @@ body{
     margin-bottom: 2rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    
-}
+    font-weight: bolder;
+} */
 #logo{
-    margin-bottom: 1rem;
+    
     padding: 2rem;
 
 }
@@ -24,36 +44,30 @@ body{
     text-align: center;
 }
 li{
-    
     display: inline;
 }
 .nav-link{
     padding: 1rem;
     text-decoration: none;
     color: black;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 .nav-link:hover{
     color: white;
 }
-.active{
-    background-color: red;
-    padding-bottom: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0%;
-    margin-bottom: 2rem;
-}
+
 /* Footer */
 footer{
     position: fixed;
-    background-color:#9CA3AF;
+    background-color:#7C3AED;
     bottom: 0;
     left: 0;
     width: 100%;
     height: fit-content;
     padding: 1rem 0rem;
     text-align: center;
+    font-weight: bolder;
+    font-family: 'Alegreya Sans', sans-serif;
+
 }
 
 /* About us */
@@ -62,17 +76,9 @@ footer{
 }
 h2 , label{
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    te
     display: inline;
+    color: #7C3AED;
 
-}
-h2#header-map{
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    text-align: left; 
-    font-weight: bolder;
-    color: #111827;
-    
-    
 }
 
 .para{
@@ -88,29 +94,43 @@ h2#header-map{
     padding: 2rem;
     
 }
-.container-bottom{
+.container-map{
     
-}
-.section-center{
+    
     
 }
 .off-white{
+    background-color: #F9FAFB;
     margin-top: 2rem;
-    background-color: #F3F4F6;
+    /* background-color: #F3F4F6; */
 }
-.horizontal
+/* .horizontal
 {
-    margin: 2rem 35rem;
-    border-style: solid;
+    max-width:1px;
+    margin: auto;
+    border-style: 1px solid;
     color: red;
-}
-
+} */
 .map{
-    text-align: center;
-    margin-bottom: 5rem;
+    padding-top: 1rem;
+    margin-top: 11rem;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 7rem;
+}
+.header-map{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    text-align: left; 
+    font-weight: bolder;
+    color: #111827;       
+    text-decoration:1px dotted underline black;
+    margin-bottom: 3rem;
+    text-underline-offset: 4px;
+    
 }
 iframe{
     border-radius: 2rem;
+    
 }
 
 /* Contact US Page */
