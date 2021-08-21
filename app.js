@@ -1,6 +1,7 @@
 console.log("Hello")
 var nav = document.querySelector(".nav")
 var navmid = document.querySelector(".nav")
+var btnScroll = document.querySelector("#btn-scrollup")
 window.onscroll = function()
 {
     var top  = window.scrollY;
@@ -14,3 +15,7 @@ window.onscroll = function()
         nav.classList.remove('active');
     }
 }
+
+btnScroll.addEventListener("click" , function(){
+    window.scrollTo(0 , 0);//(left , top)
+});

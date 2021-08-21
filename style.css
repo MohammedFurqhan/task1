@@ -4,7 +4,7 @@ body{
 
 /* Navigation Part */
 .nav{
-    background-color: ;
+    background-color:;
     padding-bottom: 1rem;
     position: fixed;
     width: 100%;
@@ -51,8 +51,12 @@ li{
     text-decoration: none;
     color: black;
 }
+.logo-link{
+    text-decoration: none;
+    color: black;
+}
 .nav-link:hover{
-    color: white;
+    color: #7C3AED;
 }
 
 /* Footer */
@@ -67,9 +71,15 @@ footer{
     text-align: center;
     font-weight: bolder;
     font-family: 'Alegreya Sans', sans-serif;
-
 }
-
+.foot-link{
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+.foot-link:hover{
+    color: white;
+}
 /* About us */
 .container-section{
     margin-top: 7rem;
@@ -78,14 +88,16 @@ h2 , label{
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     display: inline;
     color: #7C3AED;
-
+}
+h3{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
 .para{
-    font-family: 'Alegreya Sans', sans-serif;   
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif; 
     line-height: 1.2rem;
-    font-style: italic;
-    letter-spacing: 0.01rem;
+    font-weight: bold;
+    letter-spacing: rem;
 }
 .container{
     max-width: 500px;
@@ -94,8 +106,8 @@ h2 , label{
     padding: 2rem;
     
 }
-.container-map{
-    
+.container-bottom{
+    margin-bottom: 2rem;
     
     
 }
@@ -111,20 +123,38 @@ h2 , label{
     border-style: 1px solid;
     color: red;
 } */
+#btn-scrollup{
+    right: 10px;
+    bottom: 100px;
+    position: fixed;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #7C3AED;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+##btn-scrollup:hover{
+    color: #7C3AED;
+    background-color: white;
+}
 .map{
     padding-top: 1rem;
-    margin-top: 11rem;
     max-width: 500px;
     margin: auto;
     margin-bottom: 7rem;
+    border-top: 0.1rem solid #7C3AED;
 }
 .header-map{
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     text-align: left; 
     font-weight: bolder;
-    color: #111827;       
-    text-decoration:1px dotted underline black;
-    margin-bottom: 3rem;
+    color: #7C3AED;       
+    text-decoration:1px dotted underline #7C3AED;
+    
+    margin-bottom: 2rem;
     text-underline-offset: 4px;
     
 }
@@ -139,9 +169,21 @@ label{
     display: block;
     margin-bottom: 2rem;
     margin-left: 2vw;
+    font-weight: bolder;
+}
+button.submit{
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #7C3AED;
+    color: white;
+    margin: 0;
+    position: relative;
+    left: 40%;
+
 }
 input{
-    padding: 0.5vw 2rem;
+    padding: 10px 34px;
     border-radius: 0.5rem;
     border : 0.5px solid black;
     float: right;
@@ -158,4 +200,5 @@ input{
     float: right;
     margin-right: 7rem;
     text-align: left;
+    border : 0.5px solid black;
 }
