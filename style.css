@@ -213,10 +213,10 @@ input{
     border-radius: 0.5rem;
     border : 0.5px solid black;
     
-    padding: 12px 20px;
+    padding: 12px 19px;
     text-align: center;
     float: right;
-    margin-right: 7vw;
+    margin-right: 8vw;
 }
 .input-field{
     
