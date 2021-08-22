@@ -108,6 +108,7 @@ h3{
 }
 .container-bottom{
     margin-bottom: 7rem;
+    display: ;
 }
 .off-white{
     background-color: #F9FAFB;
@@ -141,11 +142,11 @@ h3{
 
 /* Map Section */
 .map-responsive{
-    overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
-    z-index: 2rem;
+    overflow: visible;
+    text-overflow: unset;
 }
 .map-responsive iframe{
     left:0;
