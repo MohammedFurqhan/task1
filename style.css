@@ -147,10 +147,13 @@ h3{
 }
 .map{
     padding-top: 1rem;
-    padding-left: 1rem;
     margin-bottom: 7rem;
     border-top: 0.1rem solid #7C3AED;
     text-align: left;
+}
+iframe{
+    width: 500px;
+    padding-left:none;
 }
 .header-map{
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
@@ -158,8 +161,8 @@ h3{
     font-weight: bolder;
     color: #7C3AED;       
     text-decoration:1px dotted underline #7C3AED;
-    
     margin-bottom: 2rem;
+    padding-left: 1rem;
     text-underline-offset: 4px;
     
 }
