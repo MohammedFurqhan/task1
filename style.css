@@ -84,11 +84,12 @@ footer{
 .container-section{
     margin-top: 7rem;
 }
-h2 , label{
+h2 {
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     display: inline;
     color: #7C3AED;
 }
+
 h3{
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
@@ -122,6 +123,10 @@ h3{
     border-style: 1px solid;
     color: red;
 } */
+.scroll{
+    z-index: 22px;
+
+}
 #btn-scrollup{
     right: 10px;
     bottom: 100px;
@@ -133,7 +138,9 @@ h3{
     border: none;
     color: white;
     cursor: pointer;
+    z-index: 22px;
     outline: none;
+    
 }
 ##btn-scrollup:hover{
     color: #7C3AED;
@@ -145,17 +152,18 @@ h3{
     padding-bottom:56.25%;
     position:relative;
     height:0;
-    overflow: visible;
-    text-overflow: unset;
+    
 }
 .map-responsive iframe{
     left:0;
     top:0;
     height:100%;
     width:100%;
+    border-radius: 1rem;
     position:absolute;
 
 }
+
 /* .container-map{
     background-color: red;
     margin: auto;
@@ -190,10 +198,44 @@ iframe{
 /* Contact US Page */
 
 label{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    color: #7C3AED;
     display: block;
     margin-bottom: 2rem;
-    margin-left: 2vw;
     font-weight: bolder;
+}
+
+input{
+
+    /*
+    
+    border : 0.5px solid black;
+    float: right;
+    
+     */
+
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    color: #7C3AED;
+    display: inline-block;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    border : 0.5px solid black;
+    margin-left: 11px;
+    padding: 12px 8px;
+    text-align: center;
+    
+}
+.input-field{
+    
+}
+
+.dropdown{
+    padding: 0.5rem 5rem;
+    border-radius: 0.5rem;
+    float: right;
+    margin-right: 7rem;
+    text-align: left;
+    border : 0.5px solid black;
 }
 button.submit{
     text-align: center;
@@ -205,24 +247,4 @@ button.submit{
     position: relative;
     left: 40%;
 
-}
-input{
-    padding: 10px 34px;
-    border-radius: 0.5rem;
-    border : 0.5px solid black;
-    float: right;
-    margin-right: 7rem;
-    
-}
-.input-field{
-    padding: 12px 0px;
-}
-
-.dropdown{
-    padding: 0.5rem 5rem;
-    border-radius: 0.5rem;
-    float: right;
-    margin-right: 7rem;
-    text-align: left;
-    border : 0.5px solid black;
 }
