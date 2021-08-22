@@ -203,6 +203,7 @@ label{
     display: block;
     margin-bottom: 2rem;
     font-weight: bolder;
+    margin-right: 7vw;
 }
 
 input {
@@ -215,7 +216,7 @@ input {
     padding: 12px 1px;
     text-align: center;
     float: right;
-    margin-left: 8vw;
+    margin-right: 7vw;
 }
 textarea{
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
@@ -226,15 +227,15 @@ textarea{
     border : 0.5px solid black;
     padding: 12px 5px;
     text-align: center;
-    
+    margin-left: 4rem;
     margin-bottom: 1rem;
     float: right;
+    margin-right: 7vw;
+    
 }
 
 .dropdown{
-
     border-radius: 0.5rem;
-    
     border : 0.5px solid black;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     display: inline-block;
@@ -243,6 +244,7 @@ textarea{
     border : 0.5px solid black;
     padding: 12px 35px;
     float: right;
+    margin-right: 7vw;
     
 }
 
