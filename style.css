@@ -206,14 +206,6 @@ label{
 }
 
 input{
-
-    /*
-    
-    border : 0.5px solid black;
-    
-    
-     */
-
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     color: #7C3AED;
     display: inline-block;
@@ -221,7 +213,7 @@ input{
     border-radius: 0.5rem;
     border : 0.5px solid black;
     margin-left: 11px;
-    padding: 12px 5vw;
+    padding: 12px 20px;
     text-align: center;
     float: right;
     margin-right: 8vw;
@@ -231,7 +223,7 @@ input{
 }
 
 .dropdown{
-    padding: 12px 7.6vw;
+    padding: 12px 53px;
     border-radius: 0.5rem;
     float: right;
     margin-right: 8vw;
