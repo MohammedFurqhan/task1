@@ -214,7 +214,7 @@ input {
     border : 0.5px solid black;
     padding: 12px 1px;
     text-align: center;
-    
+    float: right;
     margin-left: 8vw;
 }
 textarea{
@@ -228,10 +228,11 @@ textarea{
     text-align: center;
     margin-left: 8vw;
     margin-bottom: 1rem;
+    float: right;
 }
 
 .dropdown{
-    padding: 12px 36px;
+    padding: 12px;
     border-radius: 0.5rem;
     margin-left: 7vw;
     
@@ -242,8 +243,9 @@ textarea{
     font-weight: bolder;
     border-radius: 0.5rem;
     border : 0.5px solid black;
-    padding: 12px 50px;
+    padding: 12px 30px;
     text-align: left;
+    float: right;
     
 }
 
