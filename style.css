@@ -224,7 +224,7 @@ textarea{
     font-weight: bolder;
     border-radius: 0.5rem;
     border : 0.5px solid black;
-    padding: 1px 1px;
+    padding: 12px 5px;
     text-align: center;
     float: right;
     margin-right: 8vw;
@@ -232,7 +232,7 @@ textarea{
 }
 
 .dropdown{
-    padding: 12px 53px;
+    padding: 12px 36px;
     border-radius: 0.5rem;
     float: right;
     margin-right: 8vw;
@@ -245,8 +245,9 @@ button.submit{
     border-radius: 1rem;
     background-color: #7C3AED;
     color: white;
-    margin-left: 9rem;
-    left: 70%;
-    margin-top: 2rem;
+    margin: 0;
+    position: relative;
+    left: 40%;
+    margin-top: 5rem;
 
 }
