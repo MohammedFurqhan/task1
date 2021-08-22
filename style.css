@@ -94,10 +94,10 @@ h3{
 }
 
 .para{
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif; 
+    /* font-family: 'IBM Plex Sans Thai Looped', sans-serif; 
     line-height: 1.2rem;
     font-weight: bold;
-    letter-spacing: rem;
+    letter-spacing: rem; */
 }
 .container{
     max-width: 500px;
