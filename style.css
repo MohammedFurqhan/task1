@@ -232,7 +232,7 @@ textarea{
 }
 
 .dropdown{
-    padding: 12px;
+    
     border-radius: 0.5rem;
     margin-left: 7vw;
     
@@ -243,7 +243,7 @@ textarea{
     font-weight: bolder;
     border-radius: 0.5rem;
     border : 0.5px solid black;
-    padding: 12px 30px;
+    padding: 12px 35px;
     text-align: left;
     float: right;
     
