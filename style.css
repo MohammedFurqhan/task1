@@ -210,7 +210,7 @@ input{
     /*
     
     border : 0.5px solid black;
-    float: right;
+    
     
      */
 
@@ -221,19 +221,20 @@ input{
     border-radius: 0.5rem;
     border : 0.5px solid black;
     margin-left: 11px;
-    padding: 12px 8px;
+    padding: 12px 5vw;
     text-align: center;
-    
+    float: right;
+    margin-right: 8vw;
 }
 .input-field{
     
 }
 
 .dropdown{
-    padding: 0.5rem 5rem;
+    padding: 12px 7.6vw;
     border-radius: 0.5rem;
     float: right;
-    margin-right: 7rem;
+    margin-right: 8vw;
     text-align: left;
     border : 0.5px solid black;
 }
