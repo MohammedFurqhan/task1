@@ -232,13 +232,25 @@ textarea{
 }
 
 .dropdown{
-    padding: 12px 36px;
+    /* padding: 12px 36px;
     border-radius: 0.5rem;
     float: right;
     margin-right: 8vw;
     text-align: left;
+    border : 0.5px solid black; */
+
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    color: #7C3AED;
+    display: inline-block;
+    font-weight: bolder;
+    border-radius: 0.5rem;
     border : 0.5px solid black;
+    padding: 12px 62px;
+    text-align: left;
+    float: right;
+    margin-right: 8vw;
 }
+
 button.submit{
     text-align: center;
     padding: 1rem 2rem;
