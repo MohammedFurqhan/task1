@@ -205,21 +205,30 @@ label{
     font-weight: bolder;
 }
 
-input{
+input {
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     color: #7C3AED;
     display: inline-block;
     font-weight: bolder;
     border-radius: 0.5rem;
     border : 0.5px solid black;
-    
-    padding: 12px 19px;
+    padding: 12px 1px;
     text-align: center;
     float: right;
     margin-right: 8vw;
 }
-.input-field{
-    
+textarea{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    color: #7C3AED;
+    display: inline-block;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    border : 0.5px solid black;
+    padding: 1px 1px;
+    text-align: center;
+    float: right;
+    margin-right: 8vw;
+    margin-bottom: 1rem;
 }
 
 .dropdown{
@@ -236,8 +245,8 @@ button.submit{
     border-radius: 1rem;
     background-color: #7C3AED;
     color: white;
-    margin: 0;
-    position: relative;
-    left: 40%;
+    margin-left: 9rem;
+    left: 70%;
+    margin-top: 2rem;
 
 }
