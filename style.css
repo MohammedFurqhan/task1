@@ -67,7 +67,7 @@ li{
 }
 
 #slider{
-    overflow: hidden;
+    overflow: hidden; */
     /* max-width: 600px;
     margin: auto; */
 }
@@ -82,7 +82,7 @@ li{
     width: 20%;
     float: left;
 }
-@keyframes slider {
+/* @keyframes slider {
     0% {
         left:0;
     }
@@ -110,7 +110,7 @@ li{
     100% {
         left:-400%;
     }
-}
+} */
 
 /* Footer */
 footer{
