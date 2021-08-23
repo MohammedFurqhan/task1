@@ -21,9 +21,11 @@ btnScroll.addEventListener("click" , function(){
     window.scrollTo(0 , 0);//(left , top)
 });
 
+
+// IMAGE SLIDER CODE//
 var i = 0 ;
 var images =[];
-var time = 300;
+var time = 1500;
 // var slide = document.querySelector(".slide")
 
 // Image list
