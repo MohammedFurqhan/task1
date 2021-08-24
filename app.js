@@ -30,9 +30,9 @@ var time = 1500;
 
 // Image list
 
-images[0] = '/images/hero1.svg';
-images[1] = '/images/hero2.svg';
-images[2] = '/images/hero3.svg';
+images[0] = 'https://furqhantask1.netlify.app/images/hero1.svg';
+images[1] = 'https://furqhantask1.netlify.app/images/hero2.svg';
+images[2] = 'https://furqhantask1.netlify.app/images/hero3.svg';
 
 function changeImg() {
     document.slide.src= images[i];
