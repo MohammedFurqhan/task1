@@ -1,3 +1,21 @@
+// Form validation
+
+function validation(){
+    alert("hello");
+// var name = document.getElementById("Name").value;
+// var email = document.getElementById("email").value;
+// var phn = document.getElementById("phn").value;
+    
+//     var text;
+//     alert(name);
+
+// //     if(name.length < 5){
+// //         text ="please enter valid Name";
+// //         errorElement.innerHTML =text;
+// //         return false;
+// // }
+}
+
 console.log("Hello")
 var nav = document.querySelector(".nav")
 var navmid = document.querySelector(".nav")
@@ -50,18 +68,4 @@ function changeImg() {
 window.onload = changeImg;
 
 
-// Form validation
-function validation(){
-    const name = document.getElementById("#Name").value;
-    const email =document.querySelector(".Email").value;
-    const phnnum = document.querySelector(".phn-num").value;
-    const errorElement = document.getElementById("error-msg");
-    var text;
-    alert(name);
 
-//     if(name.length < 5){
-//         text ="please enter valid Name";
-//         errorElement.innerHTML =text;
-//         return false;
-// }
-}
