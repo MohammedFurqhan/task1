@@ -233,7 +233,12 @@ textarea{
     margin-right: 7vw;
     
 }
-
+#error-msg{
+    width: 10%;
+    height: 40%;
+    margin-top: 7rem;
+    float: right;
+}
 button.submit{
     text-align: center;
     padding: 1rem 2rem;

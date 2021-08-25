@@ -48,3 +48,20 @@ function changeImg() {
 }
 
 window.onload = changeImg;
+
+
+// Form validation
+function validation(){
+    const name = document.getElementById("#Name").value;
+    const email =document.querySelector(".Email").value;
+    const phnnum = document.querySelector(".phn-num").value;
+    const errorElement = document.getElementById("error-msg");
+    var text;
+    alert(name);
+
+//     if(name.length < 5){
+//         text ="please enter valid Name";
+//         errorElement.innerHTML =text;
+//         return false;
+// }
+}
