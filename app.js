@@ -1,3 +1,24 @@
+// if((name.length < 5) && (email.indexOf("@") == -1 || email.length < 6) && (state.length < 5) && (isNaN(phone) || phone.length != 10) && (message.length <= 140)){
+    
+function handleFormSubmit(event) 
+    {
+        event.preventDefault();
+        
+        const data = new FormData(event.target);
+        
+        const formJSON = Object.fromEntries(data.entries());
+      
+        // for multi-selects, we need special handling
+          // formJSON.snacks = data.getAll('snacks');
+        
+        const results = document.querySelector('.results pre');
+        results.innerText = JSON.stringify(formJSON,null, 2);
+    }
+      
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', handleFormSubmit);
+
+
 // Form validation
 
 function validate(){
@@ -37,7 +58,7 @@ function validate(){
       error_message.innerHTML = text;
       return false;
     }
-    alert("Form Submitted Successfully!");
+    // alert("Form Submitted Successfully!");
     return true;
   }
 //   End of Form validation part

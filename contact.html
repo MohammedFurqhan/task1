@@ -44,21 +44,21 @@
     </div>
 
     <!-- End of nav part -->
-    <div id="error-msg"></div>
+    <!-- <div id="error-msg"></div> -->
     <section class="container-section container-bottom">
         <section class="container off-white">
-            <section>
+            <section class="contact-form">
                 <h3 style="text-align: center;">Details</h3>
                 <div id="error_message"></div>
                 <form id="myform" onsubmit="return validate();">
                     <label for="Name"> Name :
-                        <input type="text" placeholder="Name" id="name" class="input-t">
+                        <input type="text" name="name" placeholder="Name" id="name" class="input-t">
                     </label>
                     <label for="Email"> Email :
-                        <input type="text" id="email" placeholder="adobe@gmail.com" class="input-t">
+                        <input type="text" name="email" id="email" placeholder="adobe@gmail.com" class="input-t">
                     </label>
                     <label for="Country">Country :
-                        <select name="" class="dropdown">
+                        <select name="" class="dropdown" name="country">
                             <option value="" class="option"> SELECT </option>
                             <option value="" class="option">Australia</option>
                             <option value="" class="option">Belgium</option>
@@ -67,26 +67,29 @@
                         </select>
                     </label>
                     <label for="State"> State :
-                        <input type="text" placeholder="State" id="state" class="input-t">
+                        <input type="text" name="state" placeholder="State" id="state" class="input-t">
                     </label>
                     <label for="">Phn No :
-                        <input type="text" id="phone" class="input-t" placeholder="Phn Num" class="input">
+                        <input type="text" name="Phn No" id="phone" class="input-t" placeholder="Phn Num" class="input">
                     </label>
 
 
                     <label for="Address"> Address :
-                        <textarea id="message" class="input" placeholder="4/7 abc street" class="input-t" name=""
-                            cols="20" rows="4"></textarea>
-
+                        <textarea id="message" name="Address" class="input" placeholder="4/7 abc street" class="input-t" name=""
+                            cols="20" rows="4">
+                        </textarea>
                     </label>
-
+                    <input type="hidden" name="Status" value="Successfully submitted">
                     <div class="submit">
                         <input type="submit" class="submit">
                     </div>
                 </form>
 
             </section>
-
+            <div class="results" style="margin-bottom: 5rem;">
+                <h2>Form Data</h2>
+                <pre></pre>
+              </div>
         </section>
     </section>
     
