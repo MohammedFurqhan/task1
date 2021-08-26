@@ -193,7 +193,7 @@ label{
     padding-left: ;
 }
 
-input {
+.input-t {
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     color: #7C3AED;
     display: inline-block;
@@ -239,7 +239,7 @@ textarea{
     margin-top: 7rem;
     float: right;
 }
-button.submit{
+input.submit{
     text-align: center;
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -248,6 +248,6 @@ button.submit{
     margin: 0;
     position: relative;
     left: 40%;
-    margin-top: 5rem;
+    margin-top: 6rem;
 
 }
