@@ -1,22 +1,6 @@
 // if((name.length < 5) && (email.indexOf("@") == -1 || email.length < 6) && (state.length < 5) && (isNaN(phone) || phone.length != 10) && (message.length <= 140)){
     
-function handleFormSubmit(event) 
-    {
-        event.preventDefault();
-        
-        const data = new FormData(event.target);
-        
-        const formJSON = Object.fromEntries(data.entries());
-      
-        // for multi-selects, we need special handling
-          // formJSON.snacks = data.getAll('snacks');
-        
-        const results = document.querySelector('.results pre');
-        results.innerText = JSON.stringify(formJSON,null, 2);
-    }
-      
-    const form = document.querySelector('.contact-form');
-    form.addEventListener('submit', handleFormSubmit);
+
 
 
 // Form validation
@@ -53,11 +37,26 @@ function validate(){
       return false;
     }
     
-    if(message.length <= 140){
+    if(message.length <= 80){
       text = "Please Enter More Than 140 Characters";
       error_message.innerHTML = text;
       return false;
     }
+    // Printing input value in JSON format
+    function handleFormSubmit(event) 
+    {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        const formJSON = Object.fromEntries(data.entries());
+        // for multi-selects, we need special handling
+        // formJSON.snacks = data.getAll('snacks');
+        // const results = document.getElementById("error_messages");
+        const results = document.querySelector('.results pre');
+        results.innerText = JSON.stringify(formJSON,null, 2);
+    }
+      
+    var form = document.querySelector('.contact-form');
+    form.addEventListener('submit', handleFormSubmit);    
     // alert("Form Submitted Successfully!");
     return true;
   }
@@ -92,7 +91,6 @@ btnScroll.addEventListener("click" , function(){
 // START OF IMAGE SLIDER CODE//
 var i = 0 ;
 var images =[];
-var time = 300;
 var time = 1500;
 // var slide = document.querySelector(".slide")
 
