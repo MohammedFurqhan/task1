@@ -40,6 +40,9 @@ function validate(){
     alert("Form Submitted Successfully!");
     return true;
   }
+//   End of Form validation part
+
+// Start of nav scroll color change
 console.log("Hello")
 var nav = document.querySelector(".nav")
 var navmid = document.querySelector(".nav")
@@ -57,14 +60,15 @@ window.onscroll = function()
         nav.classList.remove('active');
     }
 }
+// End of nav scroll color change
 
-// Button Top
+// Start of Button Top
 btnScroll.addEventListener("click" , function(){
     window.scrollTo(0 , 0);//(left , top)
 });
+// END OF BUTTON TOP
 
-
-// IMAGE SLIDER CODE//
+// START OF IMAGE SLIDER CODE//
 var i = 0 ;
 var images =[];
 var time = 300;
