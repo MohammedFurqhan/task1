@@ -22,6 +22,7 @@ function validate(){
       return false;
     }
     if(email.indexOf("@") == -1 || email.length < 6){
+        console.log(email)
         text = "Please Enter valid Email";
         error_message.innerHTML = text;
         return false;
@@ -37,7 +38,7 @@ function validate(){
       return false;
     }
     
-    if(message.length <= 80){
+    if(message.length <= 30){
       text = "Please Enter More Than 140 Characters";
       error_message.innerHTML = text;
       return false;
@@ -46,6 +47,7 @@ function validate(){
     function handleFormSubmit(event) 
     {
         event.preventDefault();
+        console.log(event.target)
         const data = new FormData(event.target);
         const formJSON = Object.fromEntries(data.entries());
         // for multi-selects, we need special handling
