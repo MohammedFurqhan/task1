@@ -1,10 +1,6 @@
 const Url = 'https://jsonplaceholder.typicode.com';
 async function getAllPost() {
-    var request = new Request(`${Url}/posts`);
-    const responseData = await fetch(request, { mode: 'no-cors' }).then(response => {
-        console.log(response);
-        return response.json();
-    });
+    const responseData = await fetch(`${Url}/posts`).then(response => response.json());
     console.table(responseData);
     responseData.map(data => {
         const cardContainer = document.querySelector('.card-container');
