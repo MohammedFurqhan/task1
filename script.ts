@@ -1,11 +1,6 @@
-// if((name.length < 5) && (email.indexOf("@") == -1 || email.length < 6) && (state.length < 5) && (isNaN(phone) || phone.length != 10) && (message.length <= 140)){
-    
-
-
-
 // Form validation
 function validateForm(): boolean{
-    const name: string = (document.getElementById("name") as HTMLInputElement).value;
+    const name: string = (document.getElementById("name") as HTMLInputElement).value; 
     const email: string = (<HTMLInputElement>document.getElementById("email")).value;
     const state: string = (<HTMLInputElement>document.getElementById("state")).value;
     const phone: string = (<HTMLInputElement>document.getElementById("phone")).value;
@@ -43,6 +38,7 @@ function validateForm(): boolean{
       return false;
     }
     // Printing input value in JSON format
+    // Need to fix the bug
     function handleFormSubmit(event) 
     {
         //const form = document.querySelector('#myform') as HTMLFormElement

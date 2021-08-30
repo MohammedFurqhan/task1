@@ -1,12 +1,11 @@
-// if((name.length < 5) && (email.indexOf("@") == -1 || email.length < 6) && (state.length < 5) && (isNaN(phone) || phone.length != 10) && (message.length <= 140)){
 // Form validation
 function validateForm() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const state = document.getElementById("state").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
-    let error_message = document.getElementById("error_message");
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var state = document.getElementById("state").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
+    var error_message = document.getElementById("error_message");
     error_message.style.padding = "10px";
     var text;
     if (name.length < 5) {
@@ -36,13 +35,14 @@ function validateForm() {
         return false;
     }
     // Printing input value in JSON format
+    // Need to fix the bug
     function handleFormSubmit(event) {
         //const form = document.querySelector('#myform') as HTMLFormElement
         event.preventDefault();
-        const data = new FormData(event.target);
+        var data = new FormData(event.target);
         console.log(data);
-        const formJSON = Object.keys(data).map(obj => `${obj}:${data[obj]}`);
-        const results = document.querySelector('.results pre');
+        var formJSON = Object.keys(data).map(function (obj) { return obj + ":" + data[obj]; });
+        var results = document.querySelector('.results pre');
         results.innerText = formJSON;
     }
     var form = document.querySelector('.contact-form');
@@ -82,7 +82,7 @@ images[0] = '/images/hero1.svg';
 images[1] = '/images/hero2.svg';
 images[2] = '/images/hero3.svg';
 function changeSliderImg() {
-    const sliderImg = document.getElementById('slide');
+    var sliderImg = document.getElementById('slide');
     if (sliderImg) {
         sliderImg.src = images[i];
     }
@@ -92,7 +92,7 @@ function changeSliderImg() {
     else {
         i = 0;
     }
-    setTimeout(() => {
+    setTimeout(function () {
         changeSliderImg();
     }, time);
 }
