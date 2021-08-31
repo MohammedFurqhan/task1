@@ -1,30 +1,17 @@
-const Url = 'https://jsonplaceholder.typicode.com';
-async function getAllPost() {
-    const responseData = await fetch(`${Url}/posts`, { mode: "no-cors" }).then(response => response.json());
-    console.table(responseData);
-    responseData.map(data => {
-        const cardContainer = document.querySelector('.card-container');
-        console.log(cardContainer);
-        const card = document.createElement('div');
-        const img = document.createElement('img');
-        img.src = '/images/hero1.svg';
-        img.classList.add('card-img-top');
-        card.appendChild(img);
-        const cardBody = document.createElement('div');
-        const title = document.createElement('h5');
-        title.innerHTML = data.title;
-        title.classList.add('card-title');
-        const body = document.createElement('body');
-        body.innerHTML = data.body;
-        body.classList.add('card-text');
-        cardBody.appendChild(title);
-        cardBody.appendChild(body);
-        cardBody.classList.add('card-body');
-        card.appendChild(cardBody);
-        card.classList.add('card');
-        card.style.width = "18 rem";
-        console.log(card);
-        cardContainer.appendChild(card);
+// const Url = 'https://jsonplaceholder.typicode.com'
+function allpost() {
+    var Url = 'https://jsonplaceholder.typicode.com/posts';
+    fetch(Url)
+        .then(function (response) {
+        return response.json();
+    })
+        .then(function (data) {
+        for (var i = 0; i <= data.length; i++) {
+            var p = data[i];
+            console.table(p);
+            var cardContainer = document.querySelector('#card-containers');
+            cardContainer.innerHTML += "\n    \n        <div class=\"card\">\n        UserId:</strong>" + p.userId + "</h3>\n        <h3><strong>ID:</strong>" + p.id + "</h3>\n        <h3><strong>Title:</strong>" + p.title + "</h3>\n        <h3>\n          <strong>Body:</strong>" + p.body + "\n        </h3>\n        <div class=\"btn-box\">\n          <a href=\"/post-detail.html?id=" + p.id + "\">VIEW DETAIL</a>\n          <button class=\"delete-btn\" onclick=\"deletePost(" + p.id + ")\">DELETE</button>\n        </div>\n      </div>";
+        }
     });
 }
-window.onload = getAllPost;
+allpost();

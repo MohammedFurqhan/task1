@@ -14,15 +14,37 @@
     <!-- Icon fonts -->
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <style>
+    <link rel="shortcut icon" href="/assets/favicon.ico"><style>
        
     </style>
 
 </head>
 <body>
-    <div style="margin: 7rem;"></div>
+    <section class="container-section container-bottom">
+        <section class="container off-white">
+            <section class="contact-form">
+                <h3 style="text-align: center;">Create Post</h3>
+                <div id="error_message"></div>
+                <form id="myform" onsubmit="return validateForm();">
+                    <label for="Name"> ID :
+                        <input type="text" name="name" id="name" class="input-t">
+                    </label>
+                    <label for="Email"> Title :
+                        <input type="text" name="email" id="email" class="input-t">
+                    </label>
+                    <label for="Address"> Body :
+                        <textarea id="message" name="Address" class="input" class="input-t" name=""
+                            cols="20" rows="4">
+                        </textarea>
+                    </label>
+                    <input type="hidden" name="Status" value="Successfully submitted">
+                    <div class="submit">
+                        <input type="submit" class="submit">
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>   
     
 </body>
 </html>
