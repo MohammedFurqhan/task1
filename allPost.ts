@@ -22,12 +22,20 @@ function allpost(id: number): void {
         const cardContainer = document.querySelector('#card-containers') as HTMLDivElement;
         cardContainer.innerHTML += `
         <div class="card">
-        UserId:${p.userId}
-        ID:${p.id}
-        Title:>${p.title}
-        Body:${p.body}
-        <div class="btn-box">
-          <a href="/post-detail.html?id=${p.id}">VIEW DETAIL</a>
+        <div>
+        <h3>UserId : </h3>${p.userId}
+        </div>
+        <div>
+        <h3>ID : </h3>${p.id}
+        </div>
+        <div>
+        <h3>Title : </h3>${p.title}
+        </div>
+        <div>
+        <h3>Body : </h3>${p.body}
+        </div>
+        <div class="link">
+          <a href="/post-detail.html?id=${p.id}">Post Details</a>
           <button class="delete-btn" onclick="deletePost(${p.id})">DELETE</button>
         </div>
       </div>`;
