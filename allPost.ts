@@ -1,19 +1,26 @@
 // const Url = 'https://jsonplaceholder.typicode.com'
 
 
-function allpost(): void {
+
+interface Post {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+function allpost(id: number): void {
   const Url = 'https://jsonplaceholder.typicode.com/posts'
   fetch(Url)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      for(let i=0; i<=data.length;i++){
+      for (let i = 0; i <= data.length; i++) {
         var p = data[i];
-      console.table(p)
-      const cardContainer = document.querySelector('#card-containers') as HTMLDivElement;
-      cardContainer.innerHTML += `
-    
+        console.table(p)//It will display the JSON data in Table
+
+        const cardContainer = document.querySelector('#card-containers') as HTMLDivElement;
+        cardContainer.innerHTML += `
         <div class="card">
         UserId:${p.userId}
         ID:${p.id}
@@ -25,9 +32,19 @@ function allpost(): void {
         </div>
       </div>`;
       }
-      
     })
 }
 
-
-allpost()
+function deletePost(id: number) {
+  const Url2 = `https://jsonplaceholder.typicode.com/posts/${id}`
+  fetch(Url2, {
+      method: "DELETE",
+    }).then((response) => {
+      return response.json();
+    })
+    .then((_) => {
+      allpost(id);
+      alert(`Post ${id} deleted successful!`);
+    });
+}
+allpost(0)

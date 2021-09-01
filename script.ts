@@ -8,7 +8,11 @@ function validateForm(): boolean{
     let error_message: any = (<HTMLInputElement>document.getElementById("error_message"));
     
     error_message.style.padding = "10px";
-    
+
+    function phoneValidation(phone) {
+      const pattern = /^[0-9]+$/;
+      return pattern.test(phone);
+    }
     var text;
     if(name.length < 5){
       text = "Please Enter valid Name";
@@ -26,8 +30,15 @@ function validateForm(): boolean{
       error_message.innerHTML = text;
       return false;
     }
+    
+    if(!phoneValidation(phone)){
+      text = "Mobile number should be enterd as Number";
+      error_message.innerHTML = text;
+      return false;
+    }
+    
     if(phone.length != 10){
-      text = "Please Enter valid Phone Number";
+      text = "Please Enter valid 10 Digit Number";
       error_message.innerHTML = text;
       return false;
     }
@@ -38,7 +49,7 @@ function validateForm(): boolean{
       return false;
     }
     // Printing input value in JSON format
-    // Need to fix the bug
+    // Need to fix the
     function handleFormSubmit(event) 
     {
         //const form = document.querySelector('#myform') as HTMLFormElement
