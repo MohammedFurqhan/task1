@@ -35,10 +35,8 @@ function viewPost() {
         </div> 
         
         <div class="btn">
-        <a class="update" href="/updatePost.html"> Update Post</a>
+        <a class="update" href="/editPost.html?id=${data.id}"> Edit Post</a>
         </div>`
-
-
         })
 }
 viewPost()

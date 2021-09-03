@@ -98,17 +98,31 @@ div.link button.btn-dlt{
   border-radius: 0.5rem;
   border: 1px solid #9B63FF;
 }
+@media only screen and (max-width: 1500px) {
+  #card-containers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #card-containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 900px) {
+  #card-containers {
+    max-width: 250px;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>
 </head>
 <body>
   <section>
-    <div id="card-containers">
-      
+    <div id="card-containers">     
     </div>
-    </section>
-
-    
-
-    <script src="allPost.js" type="text/javascript"></script>
+  </section>
+  <script src="allPost.js" type="text/javascript"></script>
 </body>
 </html>
