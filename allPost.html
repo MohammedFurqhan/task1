@@ -28,7 +28,7 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 #card-containers {
-  
+  width: 90%;
   height: 100%;
   margin: auto;
   margin-top: 4rem;
@@ -107,13 +107,22 @@ div.link button.btn-dlt{
 @media only screen and (max-width: 1100px) {
   #card-containers {
     grid-template-columns: repeat(2, 1fr);
+    
   }
 }
 @media only screen and (max-width: 900px) {
   #card-containers {
     max-width: 250px;
-    text-align: center;
+    justify-content: center;
+    
     grid-template-columns: repeat(1, 1fr);
+  }
+  .card{
+    margin: auto;
+    max-width: 220px;
+  }
+  div.link a{
+    margin-right: 2rem;
   }
 }
 </style>
