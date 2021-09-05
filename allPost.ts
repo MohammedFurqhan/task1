@@ -5,7 +5,8 @@
 //   title : string;
 //   body : string;
 // }
-function allpost() {
+const cardContainer = document.querySelector('#card-containers') as HTMLDivElement;
+function allpost(id?: number) {
   const Url = 'https://jsonplaceholder.typicode.com/posts'
   fetch(Url)
     .then((response) => {
@@ -13,11 +14,12 @@ function allpost() {
     })
     .then((data) => {
       console.log(data);
-      for (let i = 0; i <= data.length; i++) {
-        var p = data[i];
-         console.table(p)//It will display the JSON data in Table
+      cardContainer.innerHTML = "";
+      const filteredData = data.filter(d => d.id !== id);
+      for (let i = 0; i <= filteredData.length; i++) {
+        var p = filteredData[i];
+        //It will display the JSON data in Table
 
-        const cardContainer = document.querySelector('#card-containers') as HTMLDivElement;
         cardContainer.innerHTML += `
         <div class="card">
         <div class="card-section">
@@ -45,19 +47,19 @@ function allpost() {
 }
 function deletePost(id:number){
   console.log("clicked");
-  const Url2 = `https://jsonplaceholder.typicode.com/posts`
+  console.log(id)
+  const Url2 = `https://jsonplaceholder.typicode.com/posts/${id}`
   console.log(Url2);
 
-  fetch(Url2)
+  fetch(Url2, {
+    method: 'DELETE'
+  })
   .then((response) => {
-    return response.json();
+    allpost(id);
+    alert('Post Deleted Successfully')
   })
   .then((datas) => {
-    for (let j = 0; j <= datas.length; j++) {
-      var q = datas[j];
-      var remove = q.pop(id);
-      console.log("success")    
-    }
+
     })
 }
 // function deletePost(id: number) {
