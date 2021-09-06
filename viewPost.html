@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Post</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="post.css">
     <!-- Font link -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@3,100;1,300&display=swap" rel="stylesheet">    
@@ -22,6 +22,11 @@
             color: #7C3AED;
             font-weight: lighter;
             line-height: 2rem;
+        }
+        h2.post-heading{
+            text-align: center;
+            font-weight: lighter;
+            color: #7C3AED;
         }
         .btn{
             text-align: center;
@@ -65,9 +70,43 @@
 
 </head>
 <body>
+    <!-- Navigation part -->
+  <div>
+    <nav class="nav">
+        <div id="logo">
+            <section><a href="/" class="logo-link">Task1</a></section>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li>
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </li>
+                <li>
+                    <span class="dropdown">
+                        <p class="dropbtn">Post
+                            <i class="fa fa-caret-down"></i>
+                        </p>
+                        <span class="dropdown-content">
+                            <a href="/createPost.html">Create Post</a>
+                            <a href="/allPost.html">View Post</a> <!--All post page-->
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- View Post part -->
     <section class="container-section container-bottom"></section>
         <section class="container">
-            <h3 style="text-align: center;">Post Details</h3>
+            
             <div id="detail-card">
             </div>    
         </section>

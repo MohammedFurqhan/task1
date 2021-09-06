@@ -1,6 +1,6 @@
 
-function validatepost() : boolean{
-    const id : any = (document.getElementById("Id") as HTMLInputElement).value;
+function validatepost(e) : boolean{
+    const id : any = (document.getElementById("id") as HTMLInputElement).value;
     const title :string = (document.getElementById("title") as HTMLInputElement).value;
     const body :string = (document.getElementById("body-part") as HTMLInputElement).value;
     let error_message: any = (<HTMLInputElement>document.getElementById("error_message"));
@@ -9,7 +9,7 @@ function validatepost() : boolean{
     var text;
     if(id.length < 1){
      
-     text = "Please Enter valid Name";
+     text = "Please Enter valid ID";
       error_message.innerHTML = text;
       return false;
     }
@@ -25,16 +25,16 @@ function validatepost() : boolean{
     }
   
 
-    alert("Post Created Successfully! with the iD : ");
-    let a=document.createElement('a');
-    a.target='https://mohammedfurqhan.netlify.app/blog.html';
-    a.href='https://mohammedfurqhan.netlify.app';
+    alert("Post Created Successfully! ");
+    // let a=document.createElement('a');
+    // a.target='https://mohammedfurqhan.netlify.app/blog.html';
+    // a.href='https://mohammedfurqhan.netlify.app';
     
-    //then use this code for alert
-    if (window.confirm('Would you Like to view All Post,No'))
-    {
-    a.click();
-    };
-    return true;
+    // //then use this code for alert
+    // if (window.confirm('Would you Like to view All Post,No'))
+    // {
+    // a.click();
+    // };
+    // return true;
 }
 

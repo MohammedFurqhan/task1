@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Post</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="post.css">
     <!-- Font link -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@3,100;1,300&display=swap" rel="stylesheet">    
@@ -15,112 +15,63 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico">
-    <style>
-     h3{
-            display: inline;
-            color: #7C3AED;
-            font-weight: lighter;
-            line-height: 2rem;
-            text-align: center;
-        }
-        h2{
-            display: inline;
-            color: #7C3AED;
-            font-weight: lighter;
-            line-height: 2rem;
-            text-align: center;
-        }
-        .block{
-            display: block;
-        }
-        #id , #title {
-            display: block;
-            width: 17.7rem;
-            height: 2vh;
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-            border-radius: 7px;
-            border: 1px solid black;
-        }
-        #body-part{
-            display: block;
-            margin-bottom: 3rem;
-            margin-top: 0.5rem;
-            border-radius: 7px;
-            border: 1px solid black;
-            padding: 0.5rem;
-        }
-        .submit{
-            text-align: center;
-        }
-        #submit{
-            text-align: center;
-            padding: 0.7rem 1rem;
-            border-radius: 0.5rem;
-            color:white;
-            background-color: #7C3AED;
-        }
-        .btn{
-            text-align: center;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-        .btn a{
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            color:white;
-            background-color: #7C3AED;
-        }
-        .container{
-            margin:auto;
-            max-width: 350px;
-            line-height: 1.5rem;
-            padding: 12px;
-            border-radius: 0.5rem;
-            background-color: #F9FAFB;
-            box-shadow: 0px 10px 52px gray
-        }
-        .container-section{
-            margin-top: 8rem;
-        }
-        @media only screen and (max-width: 1100px)
-        {
-            .container {
-                max-width: 500px;
-                font-size: 13px;
-            }
-            .container-section{
-                margin-top: 10rem;
-            }
-        }
-    /* #hiddenlink{
-        display:hidden;
-    }    */
-    </style>
-
 
 </head>
 <body>
     
+      <!-- Navigation part -->
+  <div>
+    <nav class="nav">
+        <div id="logo">
+            <section><a href="/" class="logo-link">Task1</a></section>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li>
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </li>
+                <li>
+                    <span class="dropdown">
+                        <p class="dropbtn">Post
+                            <i class="fa fa-caret-down"></i>
+                        </p>
+                        <span class="dropdown-content">
+                            <a href="/createPost.html">Create Post</a>
+                            <a href="/allPost.html">View Post</a> <!--All post page-->
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- Form Part -->
     <section class="container-section container-bottom">
         <section class="container off-white">
             <div class="contact-form">
-                <h3 style="text-align: center;">Edit Post</h3>
+                <h2 class="post-heading">Edit Post</h2>
                 <div id="error_message"></div>
                 <form id="myform" onsubmit="return editPost();">
-                    <label for="Id"> ID :
+                    <label for="Id"><h3> ID :</h3>
                         <input type="number" name="id" id="id" class="input-t">
                     </label>
-                    <label for="Title"> Title :
+                    <label for="Title"><h3> Title :</h3>
                         <input type="text" name="title" id="title" class="input-t">
                     </label>
-                    <label for="Body"> Body :
+                    <label for="Body"><h3> Body :</h3>
                         <textarea id="body-part" name="body" class="input" class="input-t" name=""
-                            cols="20" rows="4"></textarea>
+                            cols="38" rows="9"></textarea>
                     </label>
+                
                     <div class="submit">
-                        <input type="submit" class="submit">
+                        <input type="submit" class="submit" value="Update">
                     </div>
                 </form>
             </div>

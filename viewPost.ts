@@ -18,8 +18,9 @@ function viewPost() {
             console.table(data)
             const cardDetail = document.getElementById('detail-card') as HTMLDivElement;
             cardDetail.innerHTML += `
-        <div class="card">
+        <div class="viewcard">
         <div class="card-section">
+        <h2 class="post-heading"> Post Details </h2>
         <div>
         <h3>UserId : </h3>${data.userId}
         </div>

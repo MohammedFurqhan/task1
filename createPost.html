@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Post</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post.css">
     <!-- Font link -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@3,100;1,300&display=swap" rel="stylesheet">    
@@ -23,12 +23,44 @@
 
 </head>
 <body>
-    
+          <!-- Navigation part -->
+  <div>
+    <nav class="nav">
+        <div id="logo">
+            <section><a href="/" class="logo-link">Task1</a></section>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li>
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </li>
+                <li>
+                    <span class="dropdown">
+                        <p class="dropbtn">Post
+                            <i class="fa fa-caret-down"></i>
+                        </p>
+                        <span class="dropdown-content">
+                            <a href="/createPost.html">Create Post</a>
+                            <a href="/allPost.html">View Post</a> <!--All post page-->
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
     <section class="container-section container-bottom">
         <section class="container off-white">
             <section class="contact-form">
                 <h3 style="text-align: center;">Create Post</h3>
-                <div id="error_message"></div>
+                <!-- <div id="error_message"></div>
                 <form id="myform" onsubmit="return validatepost();">
                     <label for="Id"> ID :
                         <input type="number" name="Id" id="Id" class="input-t">
@@ -41,10 +73,28 @@
                             cols="20" rows="4"></textarea>
                     </label>
                     <!-- <input type="hidden" name="Status" value="Successfully submitted"> -->
-                    <div class="submit">
+                    <!-- <div class="submit">
                         <input type="submit" class="submit">
                     </div>
+                </form> -->
+                <div id="error_message"></div>
+                <form id="myform" onsubmit="return validatepost();">
+                    <label for="Id"><h3> ID :</h3>
+                        <input type="number" name="Id" id="id" class="input-t">
+                    </label>
+                    <label for="Title"><h3> Title :</h3>
+                        <input type="text" name="title" id="title" class="input-t">
+                    </label>
+                    <label for="Body"><h3> Body :</h3>
+                        <textarea id="body-part" name="body" class="input" class="input-t" name=""
+                            cols="38" rows="9"></textarea>
+                    </label>
+                
+                    <div class="submit">
+                        <input type="submit" class="submit" value="Create">
+                    </div>
                 </form>
+                
             </section>
         </section>
     </section>   

@@ -18,10 +18,17 @@
             const {id, title, body} = data;
             inputId.value = id;
             htmlTitle.value = title;
-            htmlBody.innerHTML = body;
+            htmlBody.innerHTML = body;    
+        });
+    }
 
-             
-    
+    editPost()
+
+
+
+
+
+
     
         //    const contain =document.querySelector('.contact-form')as HTMLDivElement
         //    contain.innerHTML +=`
@@ -47,7 +54,4 @@
         //                     <input type="submit" id="submit">
         //                 </div>
         //             </form>`
-        });
-    }
-
-    editPost()
+     
