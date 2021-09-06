@@ -1,10 +1,3 @@
-
-// interface Post {
-//   userId : number;
-//   id : number;
-//   title : string;
-//   body : string;
-// }
 const cardContainer = document.querySelector('#card-containers') as HTMLDivElement;
 function allpost(id?: number) {
   const Url = 'https://jsonplaceholder.typicode.com/posts'
@@ -18,7 +11,7 @@ function allpost(id?: number) {
       const filteredData = data.filter(d => d.id !== id);
       for (let i = 0; i <= filteredData.length; i++) {
         var p = filteredData[i];
-        //It will display the JSON data in Table
+      
 
         cardContainer.innerHTML += `
         <div class="card">
@@ -38,7 +31,7 @@ function allpost(id?: number) {
         </div>
         <div class="link">
           <a href="/viewPost.html?id=${p.id}">Post Details</a>
-          <button class="btn-dlt" onclick="deletePost(${p.id})">DELETE</button>
+          <button class="btn-dlt" onclick="slow,deletePost(${p.id})">DELETE</button>
         </div>
       </div>`;
       
