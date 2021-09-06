@@ -31,7 +31,7 @@ function allpost(id?: number) {
         </div>
         <div class="link">
           <a href="/viewPost.html?id=${p.id}">Post Details</a>
-          <button class="btn-dlt" onclick="slow,deletePost(${p.id})">DELETE</button>
+          <button class="btn-dlt" onclick="deletePost(${p.id})">DELETE</button>
         </div>
       </div>`;
       
