@@ -2,7 +2,8 @@
     const inputId : any= (document.getElementById('id') as HTMLInputElement);
     const htmlTitle : any= (document.getElementById('title') as HTMLInputElement);
     const htmlBody :any = (document.getElementById('body-part') as HTMLInputElement);
-
+    const submit :any =(document.getElementById('submit')as HTMLInputElement);
+    
     function editPost(){
    
         const urlSearch =window.location.search;
@@ -20,8 +21,9 @@
             htmlTitle.value = title;
             htmlBody.innerHTML = body;    
         });
+   
     }
-
+    
     editPost()
 
 
