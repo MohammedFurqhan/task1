@@ -1,4 +1,4 @@
-var useid = document.getElementById('UserID');
+var userid = document.getElementById('UserID');
 var inputid = document.getElementById('id');
 var htmltitle = document.getElementById('title');
 var htmlbody = document.getElementById('body-part');
@@ -14,7 +14,7 @@ function editPost() {
         .then(function (response) { return response.json(); })
         .then(function (datas) {
         // console.log(datas);
-        useid.value = datas.userId;
+        userid.value = datas.userId;
         inputid.value = datas.id;
         htmltitle.value = datas.title;
         htmlbody.value = datas.body;
@@ -25,7 +25,7 @@ editforms.addEventListener("submit", function (event) {
     var updatedtitle = htmltitle.value;
     var updatedBody = htmlbody.value;
     console.log("Updated Post ");
-    console.log("ID : " + updatedId + "\n" + "Title : " + updatedtitle + "\n" + "Body :" + updatedBody);
+    console.log("ID : " + updatedId + "\n" + "Title : " + updatedtitle + "\n" + "Body : " + updatedBody);
     event.preventDefault();
     console.log('clicked');
     alert('Post ID' + urlid + ' Successfully updated');

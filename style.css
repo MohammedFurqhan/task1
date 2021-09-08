@@ -190,7 +190,7 @@ h3{
 .off-white{
     background-color: #F9FAFB;
     margin-top: 2rem;
-    
+    /* box-shadow: 0px 10px 52px gray */
 }
 .scroll{
     z-index: 22px;
@@ -260,7 +260,7 @@ label{
 textarea{
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     color: #7C3AED;
-    display: inline-block;
+    display: inline;
     font-weight: bolder;
     border-radius: 0.5rem;
     border : 0.5px solid black;

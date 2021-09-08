@@ -1,4 +1,4 @@
-const useid: any = (document.getElementById('UserID') as HTMLInputElement);
+const userid: any = (document.getElementById('UserID') as HTMLInputElement);
 const inputid: any = (document.getElementById('id') as HTMLInputElement);
 const htmltitle: any = (document.getElementById('title') as HTMLInputElement);
 const htmlbody: any = (document.getElementById('body-part') as HTMLInputElement);
@@ -18,7 +18,7 @@ function editPost() {
         .then(response => response.json())
         .then(datas => {
             // console.log(datas);
-            useid.value = datas.userId;
+            userid.value = datas.userId;
             inputid.value = datas.id;
             htmltitle.value = datas.title;
             htmlbody.value = datas.body;
@@ -30,7 +30,7 @@ editforms.addEventListener("submit", function (event) {
     const updatedtitle = htmltitle.value;
     const updatedBody = htmlbody.value;
     console.log("Updated Post ")
-    console.log("ID : " + updatedId +"\n" + "Title : " + updatedtitle +"\n"+ "Body :"+ updatedBody);
+    console.log("ID : " + updatedId +"\n" + "Title : " + updatedtitle +"\n"+ "Body : "+ updatedBody);
     event.preventDefault();
     console.log('clicked');
     alert('Post ID' + urlid + ' Successfully updated');

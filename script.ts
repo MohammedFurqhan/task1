@@ -1,13 +1,18 @@
 // Form validation
+
 function validateForm(): boolean{
     const name: string = (document.getElementById("name") as HTMLInputElement).value; 
     const email: string = (<HTMLInputElement>document.getElementById("email")).value;
-    const state: string = (<HTMLInputElement>document.getElementById("state")).value;
+    // const state: string = (<HTMLInputElement>document.getElementById("state")).value;
     const phone: string = (<HTMLInputElement>document.getElementById("phone")).value;
     const message: string = (<HTMLInputElement>document.getElementById("message")).value;
+    const myForm : any= (document.getElementById('myform')as HTMLElement)
     let error_message: any = (<HTMLInputElement>document.getElementById("error_message"));
-    
     error_message.style.padding = "10px";
+
+    myForm.addEventListener("submit" , function(event){
+      event.preventDefault();
+    })
 
     function phoneValidation(phone) {
       const pattern = /^[0-9]+$/;
@@ -25,11 +30,11 @@ function validateForm(): boolean{
         error_message.innerHTML = text;
         return false;
       }
-    if(state.length < 5){
-      text = "Please Enter Correct State";
-      error_message.innerHTML = text;
-      return false;
-    }
+    // if(state.length < 5){
+    //   text = "Please Enter Correct State";
+    //   error_message.innerHTML = text;
+    //   return false;
+    // }
     
     if(!phoneValidation(phone)){
       text = "Mobile number should be enterd as Number";
@@ -52,18 +57,24 @@ function validateForm(): boolean{
     // Need to fix the
     function handleFormSubmit(event) 
     {
-        //const form = document.querySelector('#myform') as HTMLFormElement
         event.preventDefault();
-        const data = new FormData(event.target);
-        console.log(data)
-        const formJSON = Object.keys(data).map(obj => `${obj}:${data[obj]}`);
-        const results: any = document.querySelector('.results pre');
-        results.innerText = formJSON;
+        const results = document.querySelector('.results pre');
+        const h = document.querySelector('#h');
+        h.innerHTML="";
+        const h2 = document.createElement("h2");
+        h2.innerText ="FORM DATA";
+        h.append(h2);
+        results.textContent = JSON.stringify({
+          name : name , 
+          email : email , 
+          phone : phone , 
+          Address : message},null , 2);
+        console.log(results.textContent);
     }
       
     var form = document.querySelector('.contact-form');
     form.addEventListener('submit', handleFormSubmit);    
-    // alert("Form Submitted Successfully!");
+    alert("Form Submitted Successfully!");
     return true;
   }
 //   End of Form validation part

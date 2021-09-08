@@ -2,11 +2,15 @@
 function validateForm() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    var state = document.getElementById("state").value;
+    // const state: string = (<HTMLInputElement>document.getElementById("state")).value;
     var phone = document.getElementById("phone").value;
     var message = document.getElementById("message").value;
+    var myForm = document.getElementById('myform');
     var error_message = document.getElementById("error_message");
     error_message.style.padding = "10px";
+    myForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+    });
     function phoneValidation(phone) {
         var pattern = /^[0-9]+$/;
         return pattern.test(phone);
@@ -23,11 +27,11 @@ function validateForm() {
         error_message.innerHTML = text;
         return false;
     }
-    if (state.length < 5) {
-        text = "Please Enter Correct State";
-        error_message.innerHTML = text;
-        return false;
-    }
+    // if(state.length < 5){
+    //   text = "Please Enter Correct State";
+    //   error_message.innerHTML = text;
+    //   return false;
+    // }
     if (!phoneValidation(phone)) {
         text = "Mobile number should be enterd as Number";
         error_message.innerHTML = text;
@@ -46,17 +50,24 @@ function validateForm() {
     // Printing input value in JSON format
     // Need to fix the
     function handleFormSubmit(event) {
-        //const form = document.querySelector('#myform') as HTMLFormElement
         event.preventDefault();
-        var data = new FormData(event.target);
-        console.log(data);
-        var formJSON = Object.keys(data).map(function (obj) { return obj + ":" + data[obj]; });
         var results = document.querySelector('.results pre');
-        results.innerText = formJSON;
+        var h = document.querySelector('#h');
+        h.innerHTML = "";
+        var h2 = document.createElement("h2");
+        h2.innerText = "FORM DATA";
+        h.append(h2);
+        results.textContent = JSON.stringify({
+            name: name,
+            email: email,
+            phone: phone,
+            Address: message
+        }, null, 2);
+        console.log(results.textContent);
     }
     var form = document.querySelector('.contact-form');
     form.addEventListener('submit', handleFormSubmit);
-    // alert("Form Submitted Successfully!");
+    alert("Form Submitted Successfully!");
     return true;
 }
 //   End of Form validation part
