@@ -55,20 +55,5 @@ function deletePost(id:number){
 
     })
 }
-// function deletePost(id: number) {
-//   const Url2 = `https://jsonplaceholder.typicode.com/posts/${id}`
-//   fetch(Url2, {
-//       method: "DELETE",
-//     }).then((response) => {
-//       return response.json();
-//     })
-//     .then((datas) => {
-//       for (let i = 0; i <= datas.length; i++) {
-//         var p = datas[i];
-//         console.table(p)
-//       allpost(id);
-//       alert(`Post ${id} deleted successful!`);
-//       }
-//     });
-// }
+
 allpost()

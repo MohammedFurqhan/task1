@@ -158,7 +158,7 @@ footer{
   .card {
     box-shadow: 0px 1px 5px gray;
     width: 100%;
-    height: 17rem;
+    height: 20rem;
     max-width: 250px;
     line-height: 1rem;
     padding: 2rem;
@@ -178,7 +178,7 @@ footer{
   
  
   .card-section{
-    height: 17rem;
+    height: 20rem;
   }
   div.link{
     bottom: 0;
