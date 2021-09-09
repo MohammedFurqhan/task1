@@ -41,7 +41,7 @@ function editPost() {
             console.log("ID : " + updatedId + "\n" + "Title : " + updatedtitle + "\n" + "Body : " + updatedBody);
             event.preventDefault();
             console.log('clicked');
-            alert('Post ID' + urlid + ' Successfully updated');
+            alert('Post ID : ' + urlid + ' Successfully updated');
         });
     });
 }
